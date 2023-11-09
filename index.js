@@ -26,7 +26,7 @@ app.use(
 
 app.get("/", (req, res) => {
   init();
-  res.send("Sessions initialized. Check the terminal for QR codes.");
+  res.status(200).json({ error: "Nice" });
 });
 
 const sessions = [];
